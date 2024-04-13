@@ -139,3 +139,8 @@
   color: var(--font-color-light);
   transition: 0.25s cubic-bezier(0, 0, 0, 1);
 }
+
+.cards-section4{
+padding: 80px;
+}
+
