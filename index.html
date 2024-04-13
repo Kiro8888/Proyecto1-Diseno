@@ -62,7 +62,7 @@
                     alt="" class="m-spacing-margin-top-72 m-override-styles">
             </div>
             <!-- SECTION 2 -->
-            <section class="uk-section uk-flex uk-flex-center uk-flex-middle ">
+            <section class="uk-section uk-flex uk-flex-center uk-flex-middle">
                 <div class="uk-grid-dividr uk-child-width-expand@s hero" uk-grid>
                     <!-- TEXT  -->
                     <div style="width: 80px;">
@@ -74,19 +74,37 @@
                                 learning curve to slow you down!.</p>
                         </div>
                         <div class="uk-flex uk-flex-middle">
-                            <button class="button">Button</button>
+                            <div class="wrapper">
+                                <div class="option">
+                                    <input checked="" value="option1" name="btn" type="radio" class="input" id="option1" onclick="changeImage('images/section1/img1.png')" />
+                                    <label class="btn" for="option1">
+                                        <span class="span">Option 1</span>
+                                    </label>
+                                </div>
+                                <div class="option">
+                                    <input value="option2" name="btn" type="radio" class="input" id="option2" onclick="changeImage('images/section1/img2.png')" />
+                                    <label class="btn" for="option2">
+                                        <span class="span">Option 2</span>
+                                    </label>
+                                </div>
+                                <div class="option">
+                                    <input value="option3" name="btn" type="radio" class="input" id="option3" onclick="changeImage('images/section1/img1.png')" />
+                                    <label class="btn" for="option3">
+                                        <span class="span">Option 3</span>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- IMG -->
                     <div>
                         <div class="uk-margin">
-                            <img src="images/section1/img2.png" alt="Descripción de la imagen"
-                                style="height: 500px; width: 1200px;">
+                            <img id="sectionImage" src="images/section1/img1.png" alt="Descripción de la imagen" style="height: 500px; width: 1200px;">
                         </div>
                     </div>
                 </div>
-
             </section>
+            
             <!-- FIN SECTION 2 -->
 
             <div class="clouds-img-2" style="transform: rotate(180deg);">
@@ -105,6 +123,7 @@
                         <div class="uk-margin text-withe uk-text-bold">
                             <h1 class="text-withe uk-text-bold">Gestiona todo, desde la estrategia hasta las tareas, para superar tus objetivos</h1>
                             <hr>
+                            <h4 class="text-withe uk-text-bold">Funcioones principales</h4>
                             <ul>
                                 <li>Gestion de proyectos</li>
                                 <li>Gestion de recursos</li>
@@ -129,6 +148,12 @@
             <!-- FIN SECTION 3 -->
 
         </container>
+                    
+        <script>
+            function changeImage(imageSrc) {
+                document.getElementById('sectionImage').src = imageSrc;
+            }
+        </script>
     </main>
 </body>
 
