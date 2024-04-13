@@ -2,15 +2,16 @@
 <html>
   <head>
     <!-- UIkit CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/css/uikit.min.css"
-    />
-    <link rel="stylesheet" href="css/uikit-rtl.css" />
-    <link rel="stylesheet" href="css/uikit-rtl.min.css" />
-    <link rel="stylesheet" href="css/uikit.css" />
-    <link rel="stylesheet" href="css/uikit.min.css" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/css/uikit.min.css" />
+    <link rel="stylesheet" href="css/uikit-rtl.css">
+    <link rel="stylesheet" href="css/uikit-rtl.min.css">
+    <link rel="stylesheet" href="css/uikit.css">
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <!-- custom -->
+    <link rel="stylesheet" href="css/style.css">
+
+    
     <!-- jQuery is required -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link
@@ -24,14 +25,193 @@
     <!-- UIkit JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/js/uikit-icons.min.js"></script>
-  </head>
 
-  <body>
+</head>
+
+<body>
     <header>
-      <!-- NAV -->
+        <!-- NAV -->
     </header>
     <main>
-      <container>
+        <container class="uk-container-expand">
+
+            <!-- SECTION 1 -->
+            <section class="uk-section uk-flex uk-flex-center uk-flex-middle section1-back">
+
+                <div class="uk-grid-dividr uk-child-width-expand@s hero" uk-grid>
+                    <!-- TEXT  -->
+                    <div style="width: 80px;">
+                        <div class="uk-margin text-withe uk-text-bold">
+                            <h1 class="text-withe uk-text-bold">Bienvenido a Planify, tu companero en la gestion eficiente de tareas y proyectos. Registrate ahora para empezar a organizar tus actividades de forma facil y rapida.</h1>
+                            <p>Mantenlo todo en el mismo lugar, aunque tu equipo no lo este.</p>
+                        </div>
+                        <div class="uk-flex uk-flex-middle">
+                            <input class="uk-input circle sec-input" type="email" placeholder="Correo electronico">
+                            <button class="button">Registrarse</button>
+                        </div>
+                    </div>
+                    <!-- IMG -->
+                    <div>
+                        <div class="uk-margin">
+                            <img src="images/section1/img1.png" alt="Descripción de la imagen">
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- FIN SECTION 1 -->
+            <div class="clouds-img">
+                <img src="https://assets-global.website-files.com/5a5399a10a77cc0001b18774/6336014264c4c7f6afc33c5e_m.img.homepage.branding.cloud-up.webp"
+                    loading="lazy" sizes="100vw"
+                    srcset="https://assets-global.website-files.com/5a5399a10a77cc0001b18774/6336014264c4c7f6afc33c5e_m.img.homepage.branding.cloud-up-p-500.webp 500w, https://assets-global.website-files.com/5a5399a10a77cc0001b18774/6336014264c4c7f6afc33c5e_m.img.homepage.branding.cloud-up-p-800.webp 800w, https://assets-global.website-files.com/5a5399a10a77cc0001b18774/6336014264c4c7f6afc33c5e_m.img.homepage.branding.cloud-up-p-1080.webp 1080w, https://assets-global.website-files.com/5a5399a10a77cc0001b18774/6336014264c4c7f6afc33c5e_m.img.homepage.branding.cloud-up-p-1600.webp 1600w, https://assets-global.website-files.com/5a5399a10a77cc0001b18774/6336014264c4c7f6afc33c5e_m.img.homepage.branding.cloud-up.webp 2880w"
+                    alt="" class="m-spacing-margin-top-72 m-override-styles">
+            </div>
+            <!-- SECTION 2 -->
+            <section class="uk-section uk-flex uk-flex-center uk-flex-middle">
+                <div class="uk-grid-dividr uk-child-width-expand@s hero" uk-grid>
+                    <!-- TEXT  -->
+                    <div style="width: 80px;">
+                        <div class="uk-margin uk-text-bold">
+                            <h1 class="uk-text-bold">Que es Planify?</h1>
+                            <p>Planify es una plataforma web disenada para ayudarte a organizar tus tareas y proyectos de manera eficiente. Usalo para aumentar tu productividad, mejorar la colaboracion en equipo y mantener un seguimiento claro de tus objetivos. Con Planify, podras decir adios al caos y tener todo bajo control.</p>
+                        </div>
+                        <div class="uk-flex uk-flex-middle">
+                            <div class="wrapper">
+                                <div class="option">
+                                    <input checked="" value="option1" name="btn" type="radio" class="input" id="option1"
+                                        onclick="changeImage('images/section1/personaliza.jpg')" />
+                                    <label class="btn" for="option1">
+                                        <span class="span uk-text-bold">Personaliza</span>
+                                    </label>
+                                </div>
+                                <div class="option">
+                                    <input value="option2" name="btn" type="radio" class="input" id="option2"
+                                        onclick="changeImage('images/section1/img2.png')" />
+                                    <label class="btn" for="option2">
+                                        <span class="span uk-text-bold">Gestiona</span>
+                                    </label>
+                                </div>
+                                <div class="option">
+                                    <input value="option3" name="btn" type="radio" class="input" id="option3"
+                                        onclick="changeImage('images/section1/graficos.png')" />
+                                    <label class="btn" for="option3">
+                                        <span class="span uk-text-bold">Graficos</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- IMG -->
+                    <div>
+                        <div class="uk-margin">
+                            <img id="sectionImage" src="images/section1/pregunta.jpg" alt="Descripción de la imagen"
+                                style="height: 400px; width: 1000px;">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FIN SECTION 2 -->
+
+            <div class="clouds-img-2" style="transform: rotate(180deg);">
+                <img src="https://assets-global.website-files.com/5a5399a10a77cc0001b18774/6336014264c4c7f6afc33c5e_m.img.homepage.branding.cloud-up.webp"
+                    loading="lazy" sizes="100vw"
+                    srcset="https://assets-global.website-files.com/5a5399a10a77cc0001b18774/6336014264c4c7f6afc33c5e_m.img.homepage.branding.cloud-up-p-500.webp 500w, https://assets-global.website-files.com/5a5399a10a77cc0001b18774/6336014264c4c7f6afc33c5e_m.img.homepage.branding.cloud-up-p-800.webp 800w, https://assets-global.website-files.com/5a5399a10a77cc0001b18774/6336014264c4c7f6afc33c5e_m.img.homepage.branding.cloud-up-p-1080.webp 1080w, https://assets-global.website-files.com/5a5399a10a77cc0001b18774/6336014264c4c7f6afc33c5e_m.img.homepage.branding.cloud-up-p-1600.webp 1600w, https://assets-global.website-files.com/5a5399a10a77cc0001b18774/6336014264c4c7f6afc33c5e_m.img.homepage.branding.cloud-up.webp 2880w"
+                    alt="" class="m-spacing-margin-top-72 m-override-styles">
+            </div>
+
+            <!-- SECTION 3 -->
+            <section class="uk-section uk-flex uk-flex-center uk-flex-middle" style="background-color: #80ceea;">
+
+                <div class="uk-grid-dividr uk-child-width-expand@s hero" uk-grid>
+                    <!-- TEXT  -->
+                    <div style="width: 80px;">
+                        <div class="uk-margin text-withe " style="font-size: 23px;">
+                            <h1 class="text-withe uk-text-bold">Gestiona todo, desde la estrategia hasta las tareas,
+                                para superar tus objetivos</h1>
+                            <hr>
+                            <h3 class="text-withe uk-text-bold">Caracteristicas principales</h3>
+                            <ul>
+                                <li>Creacion y gestion de tareas y proyectos.</li>
+                                <li>Asignacion de responsabilidades y fechas limite.</li>
+                                <li>Seguimiento del progreso y actualizacion en tiempo real.</li>
+                                <li>Comunicacion integrada entre miembros del equipo.</li>
+                                <li>Personalizacion de etiquetas, prioridades y categorias.</li>
+                            </ul>
+                        </div>
+                        <div class="uk-flex uk-flex-middle">
+                            <button class="button">Iniciar</button>
+                        </div>
+                    </div>
+                    <!-- IMG -->
+                    <div>
+                        <div class="uk-margin">
+                            <img src="images/section1/caracteristicas.png" alt="Descripción de la imagen">
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- FIN SECTION 3 -->
+
+            <!-- SECTION 4 -->
+            <section class="uk-section uk-flex uk-flex-center uk-flex-middle" style="background: linear-gradient(to bottom, #80ceea 0%, #f0f0f0 70%); height: 1300px;">
+                <div class="uk-container">
+                    <hr>
+                    <h1 class="text-withe uk-text-bold">Planify se integra perfectamente con herramientas populares como Trello y Monday, permitiendote importar y sincronizar tus proyectos existentes para una transicion sin problemas.</h1>
+                    <div class="uk-grid-match uk-grid uk-child-width-1-2@m cards-section4">
+                        <div>
+                            <div class="uk-card-default uk-card-body ">
+                                <div class="img-logo uk-margin-bottom">
+                                    <img src="images/section1/logo1.png" class="uk-margin-small-bottom" alt="Logo 1">
+                                    <h4 class="uk-margin-remove-bottom">Planify sales CRM</h4>
+                                    <p>SOFTWARE DE CRM LIDER DE G2</p>
+                                </div>
+                                <h1>Automatiza tus ciclos de ventas para cerrar mas acuerdos</h1>
+                                <hr>
+                                <ul>
+                                    <li>Pipeline de ventas</li>
+                                    <li>Gestion de contactos</li>
+                                    <li>E-MAILS masivos y seguimiento</li>
+                                </ul>
+                                <div class="uk-card-media-bottom uk-margin-top">
+                                    <img src="images/section1/integra1.png" alt="Imagen de la tarjeta">
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div>
+                            <div class="uk-card-default uk-card-body">
+                                <div class="img-logo uk-margin-bottom">
+                                    <img src="images/section1/logo2.png" class="uk-margin-small-bottom" alt="Logo 2">
+                                    <h4 class="uk-margin-remove-bottom">Planify dev</h4>
+                                    <p>SOFTWARE DE GESTION DE PRODUCTO Y SEGUIMIENTO DE BUGS LIDER DE G2</p>
+                                </div>
+                                <h1>Acelera el ciclo de vida de tu producto, desde el concepto hasta el lanzamiento</h1>
+                                <hr>
+                                <ul>
+                                    <li>Gestion de sprints</li>
+                                    <li>Planificacion de hoja de ruta</li>
+                                    <li>Seguimiento de bugs</li>
+                                </ul>
+                                <div class="uk-card-media-bottom uk-margin-top">
+                                    <img src="images/section1/integra2.png" alt="Imagen de la tarjeta">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+
+            <!-- FIN SECTION 4 -->
+        </container>
+        <script>
+            function changeImage(imageSrc) {
+                document.getElementById('sectionImage').src = imageSrc;
+            }
+        </script>
+   
          <!-- seccion1 -->
          <section class="uk-section" style="background-color: #ffffff;">
           <div class="uk-container uk-container-small">
@@ -172,6 +352,7 @@
               </div>
             </div>
           </section>
+
 
          <!-- seccion3 -->
          <section class="uk-section">
